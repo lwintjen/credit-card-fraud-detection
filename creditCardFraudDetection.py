@@ -15,7 +15,7 @@ from sklearn.neighbors import LocalOutlierFactor
 data = pd.read_csv("creditcard.csv")
 
 # explore the data set
-data = data.sample(frac = 0.1, random_state=1)
+data = data.sample(frac = 0.1, random_state=1) # cut the dataset otherwise it'd take too much time to run 
 
 
 # determine number of fraud cases in dataset
